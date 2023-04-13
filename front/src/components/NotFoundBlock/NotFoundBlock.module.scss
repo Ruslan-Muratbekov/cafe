@@ -1,0 +1,30 @@
+.root {
+  padding-top: 80px;
+  padding-bottom: 35px;
+  text-align: center;
+  background: rgba(255, 239, 216, 0.34);
+
+  img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-size: 64px;
+  }
+  button {
+    background: #ea6a12;
+    border-radius: 74px;
+    color: #fff;
+    border-color: transparent;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+}
+
+.description {
+  font-size: 22px;
+}

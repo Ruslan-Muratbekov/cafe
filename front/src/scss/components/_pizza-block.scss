@@ -1,0 +1,291 @@
+@import '../variables';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.pizza-block {
+  max-width: 456px;
+  width: 100%;
+
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  padding-right: 5px;
+
+  // &:hover {
+  //   transform: scale(1.03);
+  // }
+
+  &-wrapper {
+    padding-right: 15px;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    @media screen and (min-width: 500px) and (max-width: 945px) {
+      // text-align: center;
+      margin: 0 auto 40px auto;
+    }
+  }
+
+  .imag {
+    max-width: 456px;
+    width: 100%;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_titles {
+    margin: 25px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: #292929;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    height: 66px;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #292929;
+    line-height: 140%;
+  }
+
+  &__selector2 {
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__selector {
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+      // flex: 1;
+
+      li {
+        flex: 1;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+        color: #000000;
+        font-family: 'Comfortaa', cursive;
+        @include noselect();
+        &.active {
+          // background: #ffffff;
+          // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+          border-radius: 5px;
+          cursor: auto;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    &_btn {
+      cursor: pointer;
+
+      border: 1px solid $orange;
+      border-radius: 4px;
+      color: $orange;
+      background-color: #fff;
+      padding-right: 14px;
+      margin-left: 10px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      font-family: 'Comfortaa', cursive;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      button {
+        cursor: pointer;
+        padding: 12px 14px;
+        border-radius: 4px 0 0 4px;
+        border: 0.5px solid;
+        border-color: $orange;
+        background-color: #fff;
+        img {
+          filter: invert(63%) sepia(41%) saturate(7140%) hue-rotate(352deg) brightness(102%)
+            contrast(101%);
+        }
+      }
+    }
+  }
+
+  &__price {
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #292929;
+  }
+  .add_btn {
+    button {
+      background-color: #fff;
+      border-color: transparent;
+      &:disabled {
+        opacity: 0.4;
+        color: #787878;
+        svg {
+          filter: invert(43%) sepia(6%) saturate(7%) hue-rotate(350deg) brightness(106%)
+            contrast(82%);
+        }
+
+        &:active {
+          transform: none;
+        }
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+    padding: 12px 14px;
+    font-family: 'Comfortaa', cursive;
+    background: #fdfdfd;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      cursor: pointer;
+    }
+    i {
+      font-family: 'Comfortaa', cursive;
+      display: inline-block;
+      font-weight: 600;
+      width: 75px;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 22px;
+      position: relative;
+      top: -1px;
+      left: 3px;
+    }
+  }
+}
+.none {
+  display: none;
+}
+.InfoAboutFood {
+  font-family: 'Comfortaa', cursive;
+  width: 400px;
+  height: 152px;
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  &_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #313131;
+    margin-bottom: 12px;
+  }
+  &_subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #313131;
+    width: 320px;
+    height: 104px;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .pizza-block {
+    max-width: 328px;
+    width: 100%;
+    margin: 0;
+    &-wrapper {
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    .imag {
+      max-width: 328px;
+    }
+    &_titles {
+      margin: 0 25px 25px 25px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+
+    &__description {
+      font-size: 15px;
+      margin: 10px 0;
+      color: #000000;
+    }
+    &__price {
+      font-size: 18px;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      gap: 12px;
+      .add_btn {
+        padding: 12px 14px;
+        max-width: 300px;
+        width: 100%;
+      }
+      &_btn {
+        margin: 0;
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    &__selector {
+      ul {
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+    &__selector2 {
+      flex-direction: row-reverse;
+      gap: 12px;
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .pizza-block {
+    &-wrapper {
+      padding: 0;
+    }
+  }
+}

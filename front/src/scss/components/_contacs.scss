@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.Contacts {
+  margin: 0 auto;
+  max-width: 1300px;
+  margin-top: 80px;
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #292929;
+    font-family: 'Comfortaa', cursive;
+  }
+  &__questionBtn {
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 10px;
+    width: 290px;
+    height: 47px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #313131;
+    font-family: 'Comfortaa', cursive;
+    border-color: transparent;
+    margin: 80px 0 30px 0;
+  }
+  &__comunications {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5px 80px 5px;
+    cursor: pointer;
+    &_phoneNum {
+      width: 290px;
+      height: 40px;
+      background: #ffffff;
+      border-color: transparent;
+      font-family: 'Inter', sans-serif;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5px;
+      .phoneNum-title {
+        width: 95px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+    &_telegramNum {
+      width: 290px;
+      height: 40px;
+      background: #ffffff;
+      border-color: transparent;
+      font-family: 'Inter', sans-serif;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5px;
+      .telegramNum-title {
+        width: 95px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+    &_gmail {
+      width: 290px;
+      height: 40px;
+      background: #ffffff;
+      border-color: transparent;
+      font-family: 'Inter', sans-serif;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5px;
+      .gmail-title {
+        width: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+    &_location {
+      width: 290px;
+      height: 40px;
+      background: #ffffff;
+      border-color: transparent;
+      font-family: 'Inter', sans-serif;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5px;
+      .location-title {
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+  }
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 400px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 400px;
+}
+.gmap_iframe {
+  height: 400px !important;
+}
+
+@media screen and (max-width: 375px) {
+  .Contacts {
+    &__title {
+      font-family: 'Comfortaa';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 27px;
+      color: #292929;
+      margin: 20px 0;
+    }
+    &__questionBtn {
+      width: 183px;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      height: 30px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    &__comunications {
+      display: block;
+      margin: 0 0 20px 0;
+      &_telegramNum {
+        margin: 10px 0;
+      }
+      &_location {
+        margin: 10px 0;
+      }
+    }
+  }
+  .mapouter {
+    width: 343px;
+    height: 224px;
+    margin-bottom: 45px;
+  }
+  .gmap_canvas {
+    width: 343px;
+    height: 224px;
+    margin-bottom: 45px;
+  }
+  .contact__footer {
+    display: none;
+  }
+}

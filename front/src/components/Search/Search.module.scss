@@ -1,0 +1,103 @@
+.root_block {
+  display: block;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.input_none {
+  display: none;
+}
+.input_icon {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.input_block {
+  display: block;
+  padding: 15px 20px;
+  width: 400px;
+
+  font-size: 16px;
+  border-radius: 10px;
+  border-color: transparent;
+  &:focus {
+    outline: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .input_block {
+    width: 243px;
+  }
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.3;
+  position: absolute;
+  left: 14px;
+  top: 12px;
+}
+
+.clearIcon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.3;
+  position: absolute;
+  right: 65px;
+  top: 15px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.input_icon_forRes {
+  display: none;
+}
+
+@media screen and (max-width: 695px) {
+  .input_icon {
+    display: none;
+  }
+  .input_icon_forRes {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .search__img {
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .input_block_forRes {
+    display: block;
+    padding: 15px 20px;
+    max-width: 380px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    border-color: transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .cart_btn {
+    margin-right: 12px;
+  }
+  .input_icon_forRes {
+    margin: 20px 12px 0 12px;
+  }
+}

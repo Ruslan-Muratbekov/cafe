@@ -1,0 +1,154 @@
+.error {
+  color: #d8000c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 16px;
+    margin-right: 8px;
+    height: 100%;
+  }
+}
+.Login {
+  &_question {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #313131;
+    margin: 70px 12px 0 0;
+    text-align: end;
+    b {
+      color: #ff7010;
+    }
+  }
+  &_registration {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 1300px;
+
+    &_title {
+      font-family: 'Comfortaa', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 27px;
+      color: #292929;
+      text-align: center;
+      margin: 0 auto;
+    }
+    &_inputs {
+      gap: 30px;
+      max-width: 1000px;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      .DeliveryRegistration__registor_btn1 {
+        margin-top: 70px;
+      }
+    }
+
+    input {
+      width: 305px;
+      height: 52px;
+      background: #ffffff;
+      border-radius: 8px;
+      border-color: transparent;
+      padding: 13px;
+      margin: 13px 0;
+      margin-right: 20px;
+      &::placeholder {
+        color: #a5a5a5;
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}
+.LoginAdress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 315px;
+  margin: 150px auto 0;
+  &_title {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: #292929;
+  }
+  input {
+    width: 305px;
+    height: 52px;
+    background: #ffffff;
+    border-radius: 8px;
+    border-color: transparent;
+    padding: 12px;
+    margin-top: 12px;
+    &::placeholder {
+      color: #a5a5a5;
+    }
+  }
+  &-btn {
+    width: 305px;
+    height: 59px;
+    background: #ff7010;
+    border-color: transparent;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+    margin-top: 70px;
+    color: #fff;
+  }
+}
+
+.LogInByWhatsapp {
+  max-width: 500px;
+  margin: 30vh auto 0;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  flex-wrap: wrap;
+  input {
+    width: 305px;
+    height: 52px;
+    background: #ffffff;
+    border-radius: 8px;
+    border-color: transparent;
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    &::placeholder {
+      color: #a5a5a5;
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+  .DeliveryRegistration__registor_btn1 {
+    margin-top: 0px;
+  }
+  &_resendPswd {
+    font-size: 14px;
+    color: rgb(236, 66, 24);
+    margin-top: 15px;
+    position: absolute;
+    left: 280px;
+    cursor: pointer;
+  }
+}

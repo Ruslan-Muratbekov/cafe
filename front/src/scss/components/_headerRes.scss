@@ -1,0 +1,56 @@
+.none {
+  display: none;
+}
+
+.HeaderResponse {
+  width: 72%;
+  // background-color: rgba(0, 0, 0, 0.4);
+  background: url('../../components/images/menuBack.png') center no-repeat;
+  border-radius: 8px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  z-index: 1000;
+  border-radius: 0px 0px 0px 130px;
+  &__content {
+    position: relative;
+    height: 85%;
+    max-width: 375px;
+    width: 95%;
+    &_close {
+      position: absolute;
+      top: 30px;
+      right: 16px;
+    }
+    &_nav {
+      position: absolute;
+      top: 140px;
+      right: 45px;
+      .nav_bar {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        font-family: 'Comfortaa', cursive;
+        color: #292929;
+        text-align: right;
+        margin-top: 20px;
+      }
+    }
+    &_btn {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 14px;
+      font-family: 'Comfortaa', cursive;
+      color: #ff7010;
+      background: transparent;
+      border-color: transparent;
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+      left: 60px;
+    }
+  }
+}

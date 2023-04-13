@@ -1,0 +1,117 @@
+@import '../variables';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.header {
+  background: #ffffff;
+  margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  .container {
+    max-width: 1440px;
+
+    @media (max-width: 645px) {
+      .header__cart {
+        margin-top: 20px;
+      }
+    }
+
+    .header__inner {
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 950px) {
+        display: none;
+      }
+      .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1400px;
+        height: 76px;
+        display: flex;
+        align-items: center;
+        gap: 116px;
+        .nav_bar.active {
+          color: #ff7010;
+        }
+
+        .navbar_inner {
+          display: flex;
+          align-items: center;
+
+          div {
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .logo_text {
+          font-family: 'Comfortaa';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 14px;
+          color: #292929;
+        }
+
+        .nav {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          color: #292929;
+          font-family: 'Comfortaa', cursive;
+          display: flex;
+          align-items: center;
+          gap: 70px;
+          cursor: pointer;
+        }
+      }
+
+      .header_btn {
+        width: 209px;
+        height: 54px;
+        font-family: 'Comfortaa', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 14px;
+        background-color: #fff;
+        border: 1px solid #ff7010;
+        border-radius: 50px;
+        color: #ff7010;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+.burger {
+  display: none;
+
+  &_logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .burger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    &_logo {
+      display: block;
+      color: #292929;
+      font-family: 'Comfortaa', cursive;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 150%;
+    }
+  }
+}

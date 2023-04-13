@@ -1,0 +1,51 @@
+.ProfileEdit {
+  margin-top: 100px;
+  &_userIcon {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 328px;
+    margin: 0 auto;
+    input {
+      border: none;
+      border-bottom: 2px solid #474665;
+      background-color: transparent;
+      width: 328px;
+      color: #474665;
+      font-size: 16px;
+      margin: 10px 0 20px 0;
+      div {
+        font-family: 'Comfortaa', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #313131;
+        margin-bottom: 15px;
+        text-align: left;
+      }
+    }
+    button {
+      background: #ff7010;
+      border-radius: 4px;
+      font-family: 'Lato', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      border-color: transparent;
+      color: #ffffff;
+      width: 153px;
+      height: 43px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      margin-left: 175px;
+    }
+  }
+}

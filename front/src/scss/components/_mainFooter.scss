@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.MainFooter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 140px;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 95.75px;
+    // flex-wrap: wrap;
+
+    &_bar {
+      font-family: 'Comfortaa', cursive;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 14px;
+      color: #9a9ea6;
+    }
+  }
+  &__privicy {
+    column-gap: 121px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto 0 auto;
+    &_logo {
+      font-family: 'Comfortaa', cursive;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 14px;
+      color: #292929;
+      @media screen and (max-width: 455px) {
+        display: none;
+      }
+    }
+    &_contactBtns {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      button {
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        border-color: transparent;
+        border: 1px solid #ff7010;
+        border-radius: 50px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .footer__privicy {
+      font-family: 'Comfortaa', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #9a9ea6;
+      line-height: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .MainFooter {
+    margin-top: 20px;
+    .nav {
+      flex-wrap: wrap;
+      row-gap: 36px;
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 455px) {
+  .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 36px;
+  }
+  .MainFooter__privicy {
+    display: flex;
+    justify-content: center;
+  }
+}

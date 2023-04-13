@@ -1,0 +1,45 @@
+.ConfirmedOrder {
+  max-width: 650px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  &_orderNumber {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #292929;
+    text-align: center;
+    margin: 50px 0 13px 0;
+  }
+  &_thanks {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #313131;
+    text-align: center;
+  }
+  img {
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+  }
+  &_btn {
+    width: 332px;
+    height: 53px;
+    background: #ff7010;
+    border-radius: 8px;
+    color: #ffff;
+    border-color: transparent;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
