@@ -18,7 +18,7 @@ class Cafe(models.Model):
 
 class Category(models.Model):
 	name = models.CharField(max_length=100, verbose_name='Название')
-	icon = models.FileField(upload_to='categories/', blank=True, verbose_name='Иконка')
+	icon = models.FileField(upload_to='categories/', blank=True, verbose_name='Иконка', null=False)
 	isActive = models.BooleanField(default=True, verbose_name='Активность')
 
 	def __str__(self):
